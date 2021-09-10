@@ -64,6 +64,8 @@ int main(int argc, char *argv[]) {
       afu.write(USER_REG_ADDR, i);
       afu.write(USER_REG_ADDR, i);
       afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
 
 
       uint64_t result = afu.read(USER_REG_ADDR);
