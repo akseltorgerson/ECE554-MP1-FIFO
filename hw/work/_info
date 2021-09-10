@@ -1,0 +1,77 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2_2 2021.06, Jun 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/filespace/a/atorgerson/ece554/mp1/ece554_miniproject/hw
+T_opt
+!s110 1631230703
+VFEmV_4_l6^gn>A461omDa0
+04 7 4 work fifo_tb fast 0
+=1-000ae431a4f1-613a9aef-a804d-423b
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+OE;O;2021.2_2;73
+vfifo
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+!s110 1631230695
+!i10b 1
+!s100 gn2jF7WWN@kZTg2<@Vo[B1
+I5YPn[KXb;z0S<V:jg8cCh0
+S1
+R1
+w1631230675
+8fifo.sv
+Ffifo.sv
+!i122 16
+L0 6 33
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OE;L;2021.2_2;73
+r1
+!s85 0
+31
+Z6 !s108 1631230695.000000
+!s107 fifo.sv|
+!s90 -reportprogress|300|fifo.sv|
+!i113 0
+Z7 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vfifo_tb
+R3
+!s110 1631230696
+!i10b 1
+!s100 J`J:jF?4e0c>Y]JOTf_U00
+I?c36jjM?[jW[A?]8WE2`33
+S1
+R1
+w1631226620
+8fifo_tb.sv
+Ffifo_tb.sv
+!i122 17
+L0 3 95
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 fifo_tb.sv|
+!s90 -reportprogress|300|fifo_tb.sv|
+!i113 0
+R7
+R2

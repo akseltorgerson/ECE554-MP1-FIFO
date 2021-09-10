@@ -14,4 +14,25 @@ module fifo
   output [BITS-1:0] q
   );
   // your RTL code here
+	logic[BITS-1:0] fifo[DEPTH-1:0];
+	logic [2:0] index;
+
+  always_ff @(posedge clk, negedge rst_n) begin
+    if (~rst_n) begin
+			for (int i = 0; i < DEPTH; i++) begin
+        fifo[i] <= 0;
+			end
+			index <= 0;
+    end else begin
+    	if (en) begin
+				fifo[index] <= d;
+				index <= index + 1;
+    	end
+		end
+
+
+  end
+
+	assign q = en ? fifo[index] : {BITS{1'b0}};
+
 endmodule // fifo

@@ -55,7 +55,17 @@ int main(int argc, char *argv[]) {
     // Test 100 different writes and reads to the user MMIO register.
     unsigned errors = 0;
     for (uint64_t i=0; i < 100; i++) {
+      // Fill up FIFO to account for delay before we find valid data.
       afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+      afu.write(USER_REG_ADDR, i);
+
+
       uint64_t result = afu.read(USER_REG_ADDR);
 
       if (result != i) {
