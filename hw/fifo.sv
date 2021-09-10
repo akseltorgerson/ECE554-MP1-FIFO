@@ -15,7 +15,7 @@ module fifo
   );
   // your RTL code here
 	logic[BITS-1:0] fifo[DEPTH-1:0];
-	logic [2:0] index;
+	logic [$clog2(DEPTH)-1:0] index;
 
   always_ff @(posedge clk, negedge rst_n) begin
     if (~rst_n) begin
@@ -33,6 +33,6 @@ module fifo
 
   end
 
-	assign q = en ? fifo[index] : {BITS{1'b0}};
+	assign q = fifo[index];
 
 endmodule // fifo
