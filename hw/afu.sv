@@ -168,7 +168,7 @@ module afu
                     16'h0020: tx.c2.data <= fifo_ret;
 
 		    // If the processor requests an address that is unused, return 0.
-                    default:  tx.c2.data <= 64'h0;
+                    default:  tx.c2.data <= 64'h1;
                   endcase
                end
           end
