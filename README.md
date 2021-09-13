@@ -31,6 +31,7 @@ One key difference from the hello_afu example is the use of a simplified
 AFU C++ class that wraps some of the basic OPAE functionality to make it
 easier to get started. 
 
+
 * [Slides that explain CCI-P and the corresonding SystemVerilog code](./intel_pac_rtl_ccip.pptx).
 * [A video presentation of the slides](https://youtu.be/e03xuTsQ4fQ)
 
