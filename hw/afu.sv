@@ -73,7 +73,7 @@ module afu
    t_ccip_c0_ReqMmioHdr mmio_hdr;
    assign mmio_hdr = t_ccip_c0_ReqMmioHdr'(rx.c0.hdr);
    
-   // instantiate a fifo`
+   // instantiate a fifo
    fifo fifo1(.clk(clk), .rst_n(rst_n), .en(rx.c0.mmioWrValid), .d(rx.c0.data), .q(fifo_ret));
 
    // =============================================================//   
@@ -166,8 +166,7 @@ module afu
 		    // =============================================================   
 		    
                     // Provide the 64-bit data from the user register mapped to h0020.
-                    //16'h0020: tx.c2.data <= rx.c0.mmioRdValid ? fifo_ret : user_reg;
-                    16'h0020: tx.c2.data <= fifo_ret;
+                    16'h0020: tx.c2.data <= rx.c0.mmioRdValid ? fifo_ret : user_reg;
 
 		    // If the processor requests an address that is unused, return 0.
                     default:  tx.c2.data <= 64'b1;
